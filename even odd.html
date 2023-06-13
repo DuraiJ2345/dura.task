@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>even odd</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        for(var i=0; i<10; i++ ){
+            if(i%2==0){
+                document.write("Number is even "+i+" ");}
+            else{
+                document.write("Number is odd "+i+"<br><br>");
+            }
+        }
+        let text="";
+        let text1="";
+        for(var j=0; j<10; j++ ){
+            if(j%2==0){
+                text += "number is even  " + j + "<br>"
+                document.getElementById("demo").innerHTML=text;
+            }
+            else{
+                text += "number is odd  " + j + ".<br>"
+                document.getElementById("demo1").innerHTML=text1;
+            }
+        }
+      
+
+    </script>
+
+</body>
+</html>

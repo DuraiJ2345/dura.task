@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>array inner object</title>
+</head>
+<body>
+    <h4>Color name :</h4>
+    <p id="demo"></p>
+    <hr>
+    <p id="demo1"></p>
+    <script>
+        const color = [{c1:"Blue"},{c2:"Red"},{c3:"Orange"},{c4:"Green"},{c5:"Yellow"},
+            {c6:"Pink"},{c7:"Black"},{c8:"Gray"},{c9:"Cyan"},{c10:"Lavander"},{c11:"White"},];
+        console.log(color);
+        document.getElementById("demo").innerHTML=typeof+ color;
+        console.table(color);
+        let a=color;
+        for(var i=0;i<a;i++){
+            console.log(i);
+        }
+        document.getElementById("demo1").innerHTML=a;
+       
+    </script>
+</body>
+</html>

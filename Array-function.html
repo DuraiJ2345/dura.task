@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array method</title>
+</head>
+
+<body>
+    <h4>highest number of :</h4>
+    <P id="demo"></P>
+    
+    <h4>join elements :</h4>
+    <P id="demo1"></P>
+    
+    <h4>length of arry :</h4>
+    <P id="demo2"></P>
+    
+    <h4>join elements :</h4>
+    <P id="demo3"></P>
+    <P id="demo4"></P>
+    
+    <h4>add an element start of an array :</h4>
+    <P id="demo5"></P>
+    <P id="demo6"></P>
+
+    <h4>remove the last element</h4>
+    <P id="demo7"></P>
+    <P id="demo8"></P>
+    
+    <h4>remove element using shift</h4>
+    <P id="demo9"></P>
+    <P id="demo10"></P>
+        
+    <h4>remove element using splice</h4>
+    <P id="demo11"></P>
+    <P id="demo12"></P>
+        
+    <h4>find the index of an element</h4>
+    <P id="demo13"></P>
+    <P id="demo14"></P>
+   
+    <h4>display object elements</h4>
+    <P id="demo15"></P>
+    <P id="demo16"></P>
+    <P id="demo17"></P>
+    <P id="demo18"></P>
+    <P id="demo19"></P>
+    <P id="demo20"></P>
+    <P id="demo21"></P>
+    <P id="demo22"></P>
+    <P id="demo23"></P>
+   
+    <script>
+        //highest number
+let number=[1,2,3,4,5,6];
+       
+       document.getElementById("demo").innerHTML = Math.max(...number);       
+       //join elements
+       
+const colors=["","blue","orange","red","violet"];
+
+       document.getElementById("demo1").innerHTML=colors.join(" color = ");
+        //length of array
+       document.getElementById("demo2").innerHTML=colors.length;
+        //push method
+       document.getElementById("demo3").innerHTML=colors;
+        colors.push("green");
+       document.getElementById("demo4").innerHTML=colors;
+       //add an element the start of an array
+       document.getElementById("demo5").innerHTML=colors;
+       colors.unshift("white");
+       document.getElementById("demo6").innerHTML=colors;
+       //remove the last element
+       document.getElementById("demo7").innerHTML=colors;
+       colors.pop();
+       document.getElementById("demo8").innerHTML=colors;
+       //remove an element using shift
+       document.getElementById("demo9").innerHTML=colors;
+       colors.shift();
+       document.getElementById("demo10").innerHTML=colors;
+       //remove an element using splice
+       document.getElementById("demo11").innerHTML=colors;
+       colors.splice(3,0,"rose","purple");
+       document.getElementById("demo12").innerHTML=colors;
+       //find thr index of an element
+       document.getElementById("demo13").innerHTML=colors;
+       let col1=colors.indexOf("red");
+       document.getElementById("demo14").innerHTML=col1;
+
+       //display object elements   
+    let person={name:"A_Praveen",age:19,DOB:'1/5/2004',height:"5.4F",weight:"75kg",color:"lightblack",f_name:"das",place:"trichy",work:"welder",};
+      document.getElementById("demo15").innerHTML="Name = "+person.name;
+      document.getElementById("demo16").innerHTML="DOB = "+person.DOB;
+      document.getElementById("demo17").innerHTML="Age = "+person.age;
+      document.getElementById("demo18").innerHTML="Height = "+person.height;
+      document.getElementById("demo19").innerHTML="Weight = "+person.weight;
+      document.getElementById("demo20").innerHTML="Color = "+person.color;
+      document.getElementById("demo21").innerHTML="Father_name = "+person.f_name;
+      document.getElementById("demo22").innerHTML="Place = "+person.place;
+      document.getElementById("demo23").innerHTML="Work = "+person.work;
+    </script>
+</body>
+</html>

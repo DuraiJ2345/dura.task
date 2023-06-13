@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>forms</title>
+    <style>
+        body{
+          padding-left: 500px;
+          padding-top: 20px;
+          padding-bottom: 0%;
+          padding-right: 0%;
+          background-color: coral;
+
+           
+        }
+        input [type=text],select{
+            width:80px;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            display: block;
+            box-sizing:border-box;
+        }
+        input [type=submit]{
+            width: 200px;
+            color: darkblue;
+            padding: 18px 20px;
+            
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+         
+        }
+        .flex-container{
+            display: flexbox;
+            background-color: pink;
+            padding: 30px;
+            width:300px;
+            border-radius: 5px;
+            box-shadow: 5px 2px 0px 0px solid gray;
+        }
+        .flex-container>div {
+            border-radius: 50px;
+            background-color:lavender;
+                      
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="flex-container">
+    <form>
+        <lable for="name">Name  :</lable>
+        <input type="text" name="name" placeholder="Your name"><br><br>
+        <lable for="age">Age    :</lable>
+        <input type="number" name="age" placeholder="Your age"><br><br>
+        <label for="blood-group">Blood group    :</label>
+        <input type="text" name="blood"><br><br>        
+        <label for="gender">Gender  :</label>
+            <input type="radio" name="gender" value="Male">
+             <label for="male">Male</label>
+            <input type="radio" name="gender" value="HTML">
+             <label for="female">Female</label><br><br>
+        <lable for="dob">Date of Birth  :</lable>
+        <input type="date" name="dob" placeholder="Your DOB"><br><br>   
+        <lable for="Qualification">Qualification  :</lable>
+         <input type="checkbox">   
+         <label for="10th">10th</label>
+         <input type="checkbox">  
+         <label for="12th">12th</label>
+         <input type="checkbox">  
+         <label for="iti">ITI</label><br><br>
+        <lable for="email">E-Mail  :</lable>
+        <input type="email" name="dob" placeholder="Your Mail_id"><br><br>  
+        <lable for="Pwd">Password  :</lable>
+        <input type="password" placeholder="Your Password"><br><br>  
+        <lable for="fname">Father's name  :</lable>
+        <input type="text" name="f'name" placeholder="Your F'Name"><br><br>
+        <lable for="mname">Mother's name  :</lable>
+        <input type="text" name="m'name" placeholder="Your M'Name"><br><br>
+        <lable for="country">Country :</lable>
+            <select name="country" id="country" style="margin-left: 70px; margin-top:-25px;">
+                <option></option>
+                <option value="India">India</option>
+                <option value="chaina">Chaina</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+           </select>
+        <lable for="address" ;>Address   :</lable>
+        <input type="text" name="address" placeholder="Your address" style="height: 70px; width: 120px;"><br><br>
+        <lable for="Pno">Phone No  :</lable>
+        <input type="tel" placeholder="Your P'number"><br><br>
+        <input type="submit" value="submit" style="margin-left: 120px;"><br><br>
+    </form>        
+    </div>
+</body>
+</html>

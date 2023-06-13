@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>loop for js</title>
+</head>
+<body>
+    <h3>For</h3>
+    <p id="demo"></p>
+    <h3>While</h3>
+    <p id="demo1"></p>
+    <script>
+        let text="";
+        for(let i=1;i<11;i++){
+            text += "Number is " + i + "<br>"
+        }
+        document.getElementById("demo").innerHTML=text;
+        
+        let i=1;
+        let text0="";
+        while(i<11){
+            text0 +="No : "+ i + "<br>";
+            i++;
+        }
+        document.getElementById("demo1").innerHTML=text0;
+        
+    </script>
+</body>
+</html>
